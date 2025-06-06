@@ -4,7 +4,8 @@ import { fetchDeckData } from '../services/edhrecService';
 /**
  * Component for generating deck lists
  */
-function DeckGenerator({ commander, theme }) {
+function DeckGenerator(props) {
+  const { commander, theme } = props || {};
   const [isGenerating, setIsGenerating] = useState(false);
   const [deckData, setDeckData] = useState(null);
   const [error, setError] = useState(null);
@@ -12,6 +13,8 @@ function DeckGenerator({ commander, theme }) {
   const generateDeck = (budget) => {
     setIsGenerating(true);
     setError(null);
+
+    console.log("generating")
     
     const options = {
       commander: commander.id,
@@ -21,6 +24,7 @@ function DeckGenerator({ commander, theme }) {
     
     fetchDeckData(options, (err, data) => {
       setIsGenerating(false);
+      console.log("Deck data", data)
       
       if (err) {
         console.error('Error generating deck:', err);
@@ -58,14 +62,13 @@ function DeckGenerator({ commander, theme }) {
           <h3>Generated Deck</h3>
           <p>Commander: {commander.name}</p>
           <p>Theme: {theme}</p>
-          {deckData.cards && (
+          {deckData.deck && (
             <div className="card-list">
-              <h4>Cards ({deckData.cards.length})</h4>
+              <h4>Cards ({deckData.deck.length})</h4>
               <ul>
-                {deckData.cards.slice(0, 10).map((card, index) => (
-                  <li key={index}>{card.name}</li>
+                {deckData.deck.map((card, index) => (
+                  <li key={index}>{card}</li>
                 ))}
-                {deckData.cards.length > 10 && <li>... and {deckData.cards.length - 10} more</li>}
               </ul>
             </div>
           )}

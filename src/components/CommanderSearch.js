@@ -5,7 +5,8 @@ import { transformCommanderData } from '../utils/dataTransformers';
 /**
  * Component for searching and selecting a commander
  */
-function CommanderSearch({ onCommanderSelect }) {
+function CommanderSearch(props) {
+  const { onCommanderSelect } = props || {};
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -47,7 +48,11 @@ function CommanderSearch({ onCommanderSelect }) {
    * Handle commander selection
    */
   const handleCommanderClick = (commander) => {
-    onCommanderSelect(commander);
+    if (onCommanderSelect) {
+      onCommanderSelect(commander);
+    } else {
+      console.error('onCommanderSelect function is not defined');
+    }
   };
 
   return (

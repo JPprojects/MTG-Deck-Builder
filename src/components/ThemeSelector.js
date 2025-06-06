@@ -4,7 +4,8 @@ import { getCommanderThemes } from '../services/edhrecService';
 /**
  * Component for selecting a theme for the deck based on the commander
  */
-function ThemeSelector({ commander, onThemeSelect }) {
+function ThemeSelector(props) {
+  const { commander, onThemeSelect } = props || {};
   const [themes, setThemes] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -34,7 +35,11 @@ function ThemeSelector({ commander, onThemeSelect }) {
    * Handle theme selection
    */
   const handleThemeClick = (theme) => {
-    onThemeSelect(theme);
+    if (onThemeSelect) {
+      onThemeSelect(theme);
+    } else {
+      console.error('onThemeSelect function is not defined');
+    }
   };
 
   if (isLoading) return <div>Loading themes...</div>;
@@ -45,9 +50,9 @@ function ThemeSelector({ commander, onThemeSelect }) {
       <h2>Select a Theme for Your Deck</h2>
       
       <div className="theme-list">
-        {themes.map((theme) => (
+        {themes.map((theme, index) => (
           <div 
-            key={theme.id} 
+            key={index} 
             className="theme-card"
             onClick={() => handleThemeClick(theme)}
           >
