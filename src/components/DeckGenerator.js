@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { fetchDeckData } from '../services/edhrecService';
+import CardImage from './CardImage';
 
 /**
  * Component for generating deck lists
@@ -67,7 +68,12 @@ function DeckGenerator(props) {
               <h4>Cards ({deckData.deck.length})</h4>
               <ul>
                 {deckData.deck.map((card, index) => (
-                  <li key={index}>{card}</li>
+                  <li key={index}>
+                    <div>{card}</div>
+                    <div>
+                      <CardImage cardName={card} />
+                    </div>
+                  </li>
                 ))}
               </ul>
             </div>

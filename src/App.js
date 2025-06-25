@@ -3,6 +3,7 @@ import './App.css';
 import CommanderSearch from './components/CommanderSearch';
 import ThemeSelector from './components/ThemeSelector';
 import DeckGenerator from './components/DeckGenerator';
+import CardImage from './components/CardImage';
 
 function App() {
   const [selectedCommander, setSelectedCommander] = useState(null);
@@ -33,6 +34,7 @@ function App() {
           <div>
             <div className="selected-commander">
               <h2>Selected Commander: {selectedCommander.name}</h2>
+              <CardImage cardName={selectedCommander.name} />
               <p>Color Identity: {selectedCommander.colorIdentity}</p>
               <button onClick={() => setSelectedCommander(null)}>
                 Choose Different Commander
