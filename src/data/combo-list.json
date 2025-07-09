@@ -1,0 +1,768 @@
+[
+  {
+    "id": "combo-001",
+    "name": "Heliod Ballista",
+    "cards": ["Heliod, Sun-Crowned", "Walking Ballista"],
+    "format": ["Commander"],
+    "requirements": [
+      "Walking Ballista has at least 2 counters",
+      "You control both cards"
+    ],
+    "steps": [
+      "Give Ballista lifelink with Heliod",
+      "Remove a counter to deal 1 damage",
+      "Gain 1 life",
+      "Heliod adds a +1/+1 counter",
+      "Repeat"
+    ],
+    "result": "Infinite damage, Infinite life",
+    "tags": ["infinite", "damage", "life", "combo"]
+  },
+  {
+    "id": "combo-002",
+    "name": "Deadeye Drake",
+    "cards": ["Deadeye Navigator", "Peregrine Drake"],
+    "format": ["Commander"],
+    "requirements": [
+      "Soulbond Deadeye with Drake",
+      "Control 5+ untapped lands"
+    ],
+    "steps": [
+      "Use Deadeye's ability to blink Drake",
+      "Drake ETBs, untap 5 lands",
+      "Repeat"
+    ],
+    "result": "Infinite mana",
+    "tags": ["mana", "infinite", "blink", "ETB"]
+  },
+  {
+    "id": "combo-003",
+    "name": "Isochron Reversal",
+    "cards": ["Isochron Scepter", "Dramatic Reversal"],
+    "format": ["Commander"],
+    "requirements": [
+      "Scepter imprinted with Dramatic Reversal",
+      "Control mana rocks that tap for ≥3"
+    ],
+    "steps": [
+      "Activate Scepter to cast Reversal",
+      "Untap all nonland permanents",
+      "Repeat"
+    ],
+    "result": "Infinite mana",
+    "tags": ["infinite", "mana", "artifacts"]
+  },
+  {
+    "id": "combo-004",
+    "name": "Dockside + Emiel",
+    "cards": ["Dockside Extortionist", "Emiel the Blessed"],
+    "format": ["Commander"],
+    "requirements": [
+      "3+ artifacts/enchantments among opponents",
+      "Enough mana to activate Emiel once"
+    ],
+    "steps": [
+      "ETB Dockside → create treasures",
+      "Use 3 treasures to blink Dockside with Emiel",
+      "Repeat"
+    ],
+    "result": "Infinite treasure, ETBs, storm count",
+    "tags": ["infinite", "treasure", "ETB", "blink"]
+  },
+  {
+    "id": "combo-005",
+    "name": "Kiki-Jiki + Zealous Conscripts",
+    "cards": ["Kiki-Jiki, Mirror Breaker", "Zealous Conscripts"],
+    "format": ["Commander"],
+    "requirements": [
+      "Kiki-Jiki is untapped",
+      "Conscripts not summoning sick"
+    ],
+    "steps": [
+      "Kiki copies Conscripts",
+      "Token untaps Kiki",
+      "Repeat"
+    ],
+    "result": "Infinite creatures with haste",
+    "tags": ["infinite", "creatures", "haste"]
+  },
+  {
+    "id": "combo-006",
+    "name": "Squirrel Nest + Earthcraft",
+    "cards": ["Squirrel Nest", "Earthcraft"],
+    "format": ["Commander"],
+    "requirements": [
+      "Enchant a basic land with Squirrel Nest"
+    ],
+    "steps": [
+      "Tap land to make a Squirrel",
+      "Tap Squirrel with Earthcraft to untap land",
+      "Repeat"
+    ],
+    "result": "Infinite squirrels",
+    "tags": ["infinite", "tokens", "creatures"]
+  },
+  {
+    "id": "combo-007",
+    "name": "Blood Artist + Mikaeus + Triskelion",
+    "cards": ["Blood Artist", "Mikaeus, the Unhallowed", "Triskelion"],
+    "format": ["Commander"],
+    "requirements": [
+      "All three creatures on battlefield"
+    ],
+    "steps": [
+      "Remove counters from Trike to deal 2 damage",
+      "Remove last counter to shoot itself",
+      "Dies with undying, returns with 1 counter",
+      "Repeat",
+      "Blood Artist drains opponents"
+    ],
+    "result": "Infinite damage/life drain",
+    "tags": ["infinite", "damage", "aristocrats"]
+  },
+  {
+    "id": "combo-008",
+    "name": "Felidar Guardian + Saheeli Rai",
+    "cards": ["Felidar Guardian", "Saheeli Rai"],
+    "format": ["Commander"],
+    "requirements": [
+      "Saheeli on 3 loyalty"
+    ],
+    "steps": [
+      "Saheeli copies Guardian",
+      "ETB Guardian blinks Saheeli",
+      "Repeat"
+    ],
+    "result": "Infinite hasty Felidars",
+    "tags": ["infinite", "creatures", "ETB", "planeswalker"]
+  },
+  {
+    "id": "combo-009",
+    "name": "Restoration Angel + Kiki-Jiki",
+    "cards": ["Restoration Angel", "Kiki-Jiki, Mirror Breaker"],
+    "format": ["Commander"],
+    "requirements": [
+      "Kiki not summoning sick",
+      "Resto Angel on field"
+    ],
+    "steps": [
+      "Kiki copies Angel",
+      "Token blinks Kiki",
+      "Repeat"
+    ],
+    "result": "Infinite angels with flash and flying",
+    "tags": ["infinite", "creatures", "flying"]
+  },
+  {
+    "id": "combo-010",
+    "name": "Phyrexian Altar + Gravecrawler + Zulaport Cutthroat",
+    "cards": ["Phyrexian Altar", "Gravecrawler", "Zulaport Cutthroat"],
+    "format": ["Commander"],
+    "requirements": [
+      "Zombie on battlefield",
+      "Crawler not summoning sick"
+    ],
+    "steps": [
+      "Sac Gravecrawler for black mana",
+      "Drain with Cutthroat",
+      "Cast Gravecrawler again",
+      "Repeat"
+    ],
+    "result": "Infinite death triggers, drain, storm",
+    "tags": ["infinite", "aristocrats", "sacrifice", "life"]
+  },
+  {
+    "id": "combo-011",
+    "name": "Reveillark + Karmic Guide + Sac Outlet",
+    "cards": ["Reveillark", "Karmic Guide", "Viscera Seer"],
+    "format": ["Commander"],
+    "requirements": [
+      "Sac outlet on field",
+      "Guide and Lark in graveyard"
+    ],
+    "steps": [
+      "Sac Guide",
+      "Lark returns Guide + Seer",
+      "Guide reanimates Lark",
+      "Repeat"
+    ],
+    "result": "Infinite ETB, death triggers, scry",
+    "tags": ["infinite", "graveyard", "ETB", "sacrifice"]
+  },
+  {
+    "id": "combo-012",
+    "name": "Devoted Druid + Vizier of Remedies",
+    "cards": ["Devoted Druid", "Vizier of Remedies"],
+    "format": ["Commander"],
+    "requirements": [],
+    "steps": [
+      "Tap Druid for G",
+      "Put -1/-1 counter to untap (counter prevented)",
+      "Repeat"
+    ],
+    "result": "Infinite green mana",
+    "tags": ["infinite", "mana", "combo"]
+  },
+  {
+    "id": "combo-013",
+    "name": "Ashnod's Altar + Nim Deathmantle + Wurmcoil Engine",
+    "cards": ["Ashnod's Altar", "Nim Deathmantle", "Wurmcoil Engine"],
+    "format": ["Commander"],
+    "requirements": [],
+    "steps": [
+      "Sac Wurmcoil → gain 2 tokens and 4 mana",
+      "Pay 4 to return Wurmcoil via Deathmantle",
+      "Repeat"
+    ],
+    "result": "Infinite mana, tokens, lifegain",
+    "tags": ["infinite", "mana", "tokens", "life"]
+  },
+  {
+    "id": "combo-014",
+    "name": "Basalt Monolith + Rings of Brighthearth",
+    "cards": ["Basalt Monolith", "Rings of Brighthearth"],
+    "format": ["Commander"],
+    "requirements": ["3 mana available to start"],
+    "steps": [
+      "Tap Monolith for 3",
+      "Pay 2 to copy untap ability with Rings",
+      "Use 1 to untap",
+      "Repeat"
+    ],
+    "result": "Infinite colorless mana",
+    "tags": ["infinite", "mana", "artifacts"]
+  },
+  {
+    "id": "combo-015",
+    "name": "Sensei's Top + Future Sight + Helm of Awakening",
+    "cards": ["Sensei's Divining Top", "Future Sight", "Helm of Awakening"],
+    "format": ["Commander"],
+    "requirements": [],
+    "steps": [
+      "Cast Top from top of library (cost 1)",
+      "Draw card with Top",
+      "Recast from top of library",
+      "Repeat"
+    ],
+    "result": "Infinite storm, draw entire deck",
+    "tags": ["infinite", "draw", "storm"]
+  },
+  {
+    "id": "combo-016",
+    "name": "Food Chain + Misthollow Griffin",
+    "cards": ["Food Chain", "Misthollow Griffin"],
+    "format": ["Commander"],
+    "requirements": [],
+    "steps": [
+      "Exile Griffin to Food Chain → gain 5 mana",
+      "Cast Griffin again",
+      "Repeat"
+    ],
+    "result": "Infinite mana (any one color)",
+    "tags": ["infinite", "mana", "exile"]
+  },
+  {
+    "id": "combo-017",
+    "name": "Demonic Consultation + Thassa's Oracle",
+    "cards": ["Demonic Consultation", "Thassa's Oracle"],
+    "format": ["Commander"],
+    "requirements": [
+      "Oracle on stack",
+      "Consultation in hand"
+    ],
+    "steps": [
+      "Cast Oracle, hold priority",
+      "Cast Consultation naming a non-existent card",
+      "Deck exiled, Oracle resolves",
+      "Win"
+    ],
+    "result": "Win the game",
+    "tags": ["instant-win", "oracle", "combo"]
+  },
+  {
+    "id": "combo-018",
+    "name": "Worldgorger Dragon + Animate Dead",
+    "cards": ["Worldgorger Dragon", "Animate Dead"],
+    "format": ["Commander"],
+    "requirements": ["Other mana-producing permanents"],
+    "steps": [
+      "Animate Dragon → exile your permanents",
+      "Dragon dies to Animate Dead leaving",
+      "Everything returns",
+      "Repeat"
+    ],
+    "result": "Infinite mana, ETB, LTB triggers",
+    "tags": ["infinite", "mana", "blink", "ETB"]
+  },
+  {
+    "id": "combo-019",
+    "name": "Underworld Breach + Brain Freeze + LED",
+    "cards": ["Underworld Breach", "Brain Freeze", "Lion's Eye Diamond"],
+    "format": ["Commander"],
+    "requirements": [],
+    "steps": [
+      "Cast LED, crack for 3 mana",
+      "Use mana to cast Brain Freeze targeting self",
+      "Mill and replay all cards",
+      "Repeat"
+    ],
+    "result": "Deck mill, storm, win",
+    "tags": ["infinite", "storm", "mill", "combo"]
+  },
+  {
+    "id": "combo-020",
+    "name": "Helm of the Host + Godo",
+    "cards": ["Helm of the Host", "Godo, Bandit Warlord"],
+    "format": ["Commander"],
+    "requirements": [],
+    "steps": [
+      "Attack with Godo wearing Helm",
+      "Make copy of Godo → gets extra combat",
+      "Attack again",
+      "Repeat"
+    ],
+    "result": "Infinite combats, win",
+    "tags": ["infinite", "combat", "legend"]
+  },
+  {
+    "id": "combo-021",
+    "name": "Karmic Guide + Reveillark + Saffi Eriksdotter",
+    "cards": ["Karmic Guide", "Reveillark", "Saffi Eriksdotter"],
+    "format": ["Commander"],
+    "requirements": ["Sac outlet"],
+    "steps": [
+      "Use Saffi on Lark",
+      "Sac Guide and Lark",
+      "Lark returns Saffi and Guide",
+      "Guide reanimates Lark",
+      "Repeat"
+    ],
+    "result": "Infinite ETB, death triggers",
+    "tags": ["infinite", "graveyard", "ETB"]
+  },
+  {
+    "id": "combo-022",
+    "name": "Ashnod's Altar + Tidespout Tyrant + Spell",
+    "cards": ["Ashnod's Altar", "Tidespout Tyrant", "Any cheap spell"],
+    "format": ["Commander"],
+    "requirements": ["2+ bounceable mana rocks"],
+    "steps": [
+      "Cast spell → bounce a mana rock",
+      "Recast rock for mana",
+      "Repeat"
+    ],
+    "result": "Infinite bounce, mana, storm",
+    "tags": ["infinite", "mana", "storm", "bounce"]
+  },
+  {
+    "id": "combo-023",
+    "name": "Kiki-Jiki + Combat Celebrant",
+    "cards": ["Kiki-Jiki, Mirror Breaker", "Combat Celebrant"],
+    "format": ["Commander"],
+    "requirements": [],
+    "steps": [
+      "Copy Celebrant with Kiki",
+      "Exert copy for extra combat",
+      "Untap Kiki",
+      "Repeat"
+    ],
+    "result": "Infinite combat steps",
+    "tags": ["infinite", "combat", "creatures"]
+  },
+  {
+    "id": "combo-024",
+    "name": "Intruder Alarm + Creature Generator + Mana Dork",
+    "cards": ["Intruder Alarm", "Sprout Swarm", "Llanowar Elves"],
+    "format": ["Commander"],
+    "requirements": [
+      "Creature generator with mana loop"
+    ],
+    "steps": [
+      "Cast creature → Alarm untaps dork",
+      "Tap dork → cast another creature",
+      "Repeat"
+    ],
+    "result": "Infinite mana, creatures",
+    "tags": ["infinite", "mana", "creatures"]
+  },
+  {
+    "id": "combo-025",
+    "name": "Tymna + Jeska + Lifeline",
+    "cards": ["Tymna the Weaver", "Jeska, Thrice Reborn", "Lifeline"],
+    "format": ["Commander"],
+    "requirements": ["Creatures must be dying"],
+    "steps": [
+      "Jeska triples Tymna damage",
+      "Swing, draw, creatures die",
+      "Lifeline returns creatures",
+      "Repeat"
+    ],
+    "result": "Infinite damage, draw",
+    "tags": ["infinite", "damage", "draw"]
+  },
+  {
+    "id": "combo-026",
+    "name": "Breya + Altar + Deathmantle",
+    "cards": ["Breya, Etherium Shaper", "Ashnod's Altar", "Nim Deathmantle"],
+    "format": ["Commander"],
+    "requirements": [],
+    "steps": [
+      "Sac Breya and thopters to Altar",
+      "Use 4 colorless to reanimate Breya",
+      "ETB makes more tokens",
+      "Repeat"
+    ],
+    "result": "Infinite tokens, mana, ETB",
+    "tags": ["infinite", "tokens", "mana"]
+  },
+  {
+    "id": "combo-027",
+    "name": "Myr Retriever + Scrap Trawler + Krark-Clan Ironworks",
+    "cards": ["Myr Retriever", "Scrap Trawler", "Krark-Clan Ironworks"],
+    "format": ["Commander"],
+    "requirements": [],
+    "steps": [
+      "Sac Retriever → trigger Trawler",
+      "Return artifact A",
+      "Sac Trawler → return Retriever",
+      "Repeat"
+    ],
+    "result": "Infinite ETB, artifacts, storm",
+    "tags": ["infinite", "artifacts", "combo"]
+  },
+  {
+    "id": "combo-028",
+    "name": "Triskelion + Mikaeus the Unhallowed",
+    "cards": ["Triskelion", "Mikaeus, the Unhallowed"],
+    "format": ["Commander"],
+    "requirements": [],
+    "steps": [
+      "Remove 2 counters to ping",
+      "Remove last to kill Trike",
+      "Undying returns Trike",
+      "Repeat"
+    ],
+    "result": "Infinite damage",
+    "tags": ["infinite", "damage"]
+  },
+  {
+    "id": "combo-029",
+    "name": "Necrotic Ooze + Devoted Druid + Morselhoarder",
+    "cards": ["Necrotic Ooze", "Devoted Druid", "Morselhoarder"],
+    "format": ["Commander"],
+    "requirements": ["Druid & Hoarder in graveyard"],
+    "steps": [
+      "Ooze gains both abilities",
+      "Tap/untap and remove counters",
+      "Repeat"
+    ],
+    "result": "Infinite mana",
+    "tags": ["infinite", "mana", "combo"]
+  },
+  {
+    "id": "combo-030",
+    "name": "Freed from the Real + Bloom Tender",
+    "cards": ["Freed from the Real", "Bloom Tender"],
+    "format": ["Commander"],
+    "requirements": ["Tender taps for at least U + other"],
+    "steps": [
+      "Tap Tender → get 2+ mana",
+      "Use U to untap",
+      "Repeat"
+    ],
+    "result": "Infinite mana",
+    "tags": ["infinite", "mana", "auras"]
+  },
+  {
+    "id": "combo-031",
+    "name": "Sanguine Bond + Exquisite Blood",
+    "cards": ["Sanguine Bond", "Exquisite Blood"],
+    "format": ["Commander"],
+    "requirements": [],
+    "steps": [
+      "Any life loss or gain triggers loop",
+      "Bond → life loss",
+      "Blood → life gain",
+      "Repeat"
+    ],
+    "result": "Infinite loop, drain, win",
+    "tags": ["infinite", "life", "drain"]
+  },
+  {
+    "id": "combo-032",
+    "name": "Temur Sabertooth + Eternal Witness + Mana Dorks",
+    "cards": ["Temur Sabertooth", "Eternal Witness", "Llanowar Elves"],
+    "format": ["Commander"],
+    "requirements": [
+      "4+ mana from mana dorks",
+      "Regrowth in GY"
+    ],
+    "steps": [
+      "Bounce Witness → replay Regrowth",
+      "Regrow creature → repeat",
+      "Loop dork for infinite mana"
+    ],
+    "result": "Infinite mana, ETB",
+    "tags": ["infinite", "mana", "combo"]
+  },
+  {
+    "id": "combo-033",
+    "name": "Aluren + Cavern Harpy + Parasitic Strix",
+    "cards": ["Aluren", "Cavern Harpy", "Parasitic Strix"],
+    "format": ["Commander"],
+    "requirements": [],
+    "steps": [
+      "Cast Strix → gain life",
+      "Use Harpy to bounce Strix",
+      "Repeat",
+      "Drain opponents"
+    ],
+    "result": "Infinite life drain",
+    "tags": ["infinite", "life", "ETB"]
+  },
+  {
+    "id": "combo-034",
+    "name": "Dockside + Temur Sabertooth",
+    "cards": ["Dockside Extortionist", "Temur Sabertooth"],
+    "format": ["Commander"],
+    "requirements": [
+      "3+ artifacts/enchantments among opponents"
+    ],
+    "steps": [
+      "ETB Dockside → make treasures",
+      "Use 2 treasures to bounce Dockside",
+      "Repeat"
+    ],
+    "result": "Infinite treasure, ETB",
+    "tags": ["infinite", "mana", "tokens"]
+  },
+  {
+    "id": "combo-035",
+    "name": "Leonin Relic-Warder + Animate Dead",
+    "cards": ["Leonin Relic-Warder", "Animate Dead"],
+    "format": ["Commander"],
+    "requirements": [],
+    "steps": [
+      "Animate Warder → exile Animate Dead",
+      "Warder dies → return Animate",
+      "Repeat"
+    ],
+    "result": "Infinite ETB, death triggers",
+    "tags": ["infinite", "sacrifice", "graveyard"]
+  },
+  {
+    "id": "combo-036",
+    "name": "Reassembling Skeleton + Phyrexian Altar + Pitiless Plunderer",
+    "cards": ["Reassembling Skeleton", "Phyrexian Altar", "Pitiless Plunderer"],
+    "format": ["Commander"],
+    "requirements": [],
+    "steps": [
+      "Sac Skeleton for mana and treasure",
+      "Use mana to return Skeleton",
+      "Repeat"
+    ],
+    "result": "Infinite sacrifice, mana",
+    "tags": ["infinite", "mana", "aristocrats"]
+  },
+  {
+    "id": "combo-037",
+    "name": "Marionette Master + Treasures",
+    "cards": ["Marionette Master", "Treasure Generator"],
+    "format": ["Commander"],
+    "requirements": ["Master has 3 +1/+1 counters"],
+    "steps": [
+      "Sac treasures → Master triggers",
+      "Deal 3 damage per treasure",
+      "Repeat with infinite treasure"
+    ],
+    "result": "Infinite damage",
+    "tags": ["infinite", "damage", "treasure"]
+  },
+  {
+    "id": "combo-038",
+    "name": "Goblin Sharpshooter + Basilisk Collar + Deathtouch",
+    "cards": ["Goblin Sharpshooter", "Basilisk Collar"],
+    "format": ["Commander"],
+    "requirements": [],
+    "steps": [
+      "Equip Collar to Sharpshooter",
+      "Ping creature → dies, Sharpshooter untaps",
+      "Repeat"
+    ],
+    "result": "Board wipe, control",
+    "tags": ["infinite", "damage", "removal"]
+  },
+  {
+    "id": "combo-039",
+    "name": "Pemmin's Aura + Palinchron",
+    "cards": ["Pemmin's Aura", "Palinchron"],
+    "format": ["Commander"],
+    "requirements": ["7 lands"],
+    "steps": [
+      "Tap 7 lands",
+      "Use 4 to bounce Palinchron",
+      "Use 2 to untap with Aura",
+      "Repeat"
+    ],
+    "result": "Infinite mana",
+    "tags": ["infinite", "mana", "auras"]
+  },
+  {
+    "id": "combo-040",
+    "name": "Mnemonic Wall + Ghostly Flicker + Archaeomancer",
+    "cards": ["Mnemonic Wall", "Ghostly Flicker", "Archaeomancer"],
+    "format": ["Commander"],
+    "requirements": [],
+    "steps": [
+      "Flicker Wall and Archaeomancer",
+      "Each returns Flicker",
+      "Repeat"
+    ],
+    "result": "Infinite storm, ETB",
+    "tags": ["infinite", "ETB", "spells"]
+  },
+  {
+    "id": "combo-041",
+    "name": "Ashnod's Altar + Gravecrawler + Plague Belcher",
+    "cards": ["Ashnod's Altar", "Gravecrawler", "Plague Belcher"],
+    "format": ["Commander"],
+    "requirements": ["Another zombie"],
+    "steps": [
+      "Sac Crawler for 2 mana → Belcher triggers",
+      "Cast Crawler again",
+      "Repeat"
+    ],
+    "result": "Infinite drain",
+    "tags": ["infinite", "drain", "sacrifice"]
+  },
+  {
+    "id": "combo-042",
+    "name": "Shirei + 1-Power Creatures + Sacrifice Engine",
+    "cards": ["Shirei, Shizo's Caretaker", "Perilous Myr", "Viscera Seer"],
+    "format": ["Commander"],
+    "requirements": [],
+    "steps": [
+      "Sac Myr → deals 2",
+      "End step → return with Shirei",
+      "Repeat"
+    ],
+    "result": "Infinite damage",
+    "tags": ["infinite", "damage", "graveyard"]
+  },
+  {
+    "id": "combo-043",
+    "name": "Auriok Salvagers + LED",
+    "cards": ["Auriok Salvagers", "Lion's Eye Diamond"],
+    "format": ["Commander"],
+    "requirements": [],
+    "steps": [
+      "Crack LED for 3 white",
+      "Use 2 to return LED",
+      "Repeat"
+    ],
+    "result": "Infinite mana",
+    "tags": ["infinite", "mana", "combo"]
+  },
+  {
+    "id": "combo-044",
+    "name": "Phyrexian Devourer + Triskelion",
+    "cards": ["Phyrexian Devourer", "Triskelion"],
+    "format": ["Commander"],
+    "requirements": ["Devourer below 7 power"],
+    "steps": [
+      "Exile cards to grow Devourer",
+      "Remove counters for damage",
+      "Repeat",
+      "Use Trike for final pings"
+    ],
+    "result": "Combo kill",
+    "tags": ["infinite", "damage", "combo"]
+  },
+  {
+    "id": "combo-045",
+    "name": "Orcish Bowmasters + Wheel Effect + Archfiend of Ifnir",
+    "cards": ["Orcish Bowmasters", "Archfiend of Ifnir", "Wheel of Fortune"],
+    "format": ["Commander"],
+    "requirements": [],
+    "steps": [
+      "Cast Wheel → draw 7",
+      "Ifnir and Bowmasters trigger",
+      "Board wipe and token storm"
+    ],
+    "result": "Mass removal, token army",
+    "tags": ["combo", "ETB", "draw"]
+  },
+  {
+    "id": "combo-046",
+    "name": "Kinnan + Basalt Monolith",
+    "cards": ["Kinnan, Bonder Prodigy", "Basalt Monolith"],
+    "format": ["Commander"],
+    "requirements": [],
+    "steps": [
+      "Tap Monolith for 3",
+      "Use 3 to untap (Kinnan adds 1)",
+      "Repeat"
+    ],
+    "result": "Infinite mana",
+    "tags": ["infinite", "mana", "artifacts"]
+  },
+  {
+    "id": "combo-047",
+    "name": "Dross Scorpion + Mycosynth Lattice + Artifact Creature",
+    "cards": ["Dross Scorpion", "Mycosynth Lattice", "Treasure Keeper"],
+    "format": ["Commander"],
+    "requirements": ["Sac outlet"],
+    "steps": [
+      "Sac artifact creature → Scorpion untaps",
+      "Repeat with recursion",
+      "Storm off"
+    ],
+    "result": "Infinite untaps, storm",
+    "tags": ["infinite", "artifacts", "storm"]
+  },
+  {
+    "id": "combo-048",
+    "name": "Glen Elendra Archmage + Mikaeus",
+    "cards": ["Glen Elendra Archmage", "Mikaeus, the Unhallowed"],
+    "format": ["Commander"],
+    "requirements": [],
+    "steps": [
+      "Sac Glen to counter",
+      "Undying returns her",
+      "Repeat"
+    ],
+    "result": "Lock opponents out of noncreature spells",
+    "tags": ["lock", "counter", "combo"]
+  },
+  {
+    "id": "combo-049",
+    "name": "Sage of Hours + Ezuri, Claw of Progress",
+    "cards": ["Sage of Hours", "Ezuri, Claw of Progress"],
+    "format": ["Commander"],
+    "requirements": [
+      "Sage gets 5+ experience counters"
+    ],
+    "steps": [
+      "Attack → get 5+ counters",
+      "Remove for extra turn",
+      "Repeat"
+    ],
+    "result": "Infinite turns",
+    "tags": ["infinite", "turns", "combo"]
+  },
+  {
+    "id": "combo-050",
+    "name": "Wanderwine Prophets + Merfolk Lord",
+    "cards": ["Wanderwine Prophets", "Merrow Reejerey"],
+    "format": ["Commander"],
+    "requirements": [],
+    "steps": [
+      "Champion a merfolk",
+      "Deal damage to sac Prophets",
+      "Get extra turn → Prophets return",
+      "Repeat"
+    ],
+    "result": "Infinite turns",
+    "tags": ["infinite", "turns", "creatures"]
+  }
+]

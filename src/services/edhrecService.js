@@ -40,7 +40,7 @@ function fetchCommanderData(commanderName, callback) {
     throw new Error('Commander name is required');
   }
 
-  const commander = commanderName.trim().toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '-');
+  const commander = commanderName.trim().toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-');
 
   const url = `${BASE_URL}/commanders/${commander}.json`;   
   console.log(`Fetching commander data from: ${url}`);
