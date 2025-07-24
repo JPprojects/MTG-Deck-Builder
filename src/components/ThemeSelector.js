@@ -18,7 +18,7 @@ function ThemeSelector(props) {
       setIsLoading(true);
       try {
         const themes = await getCommanderThemes(commander);
-        console.log(themes)
+        console.log('themes', themes)
         setThemes(themes);
         setIsLoading(false);
       } catch (err) {
