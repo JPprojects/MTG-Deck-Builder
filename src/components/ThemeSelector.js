@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getCommanderThemes } from '../services/edhrecService';
+import { unformatThemeName } from '../utils/formatUtils';
 
 /**
  * Component for selecting a theme for the deck based on the commander
@@ -56,7 +57,7 @@ function ThemeSelector(props) {
             className="theme-card"
             onClick={() => handleThemeClick(theme)}
           >
-            <h3>{theme}</h3>
+            <h3>{unformatThemeName(theme)}</h3>
           </div>
         ))}
       </div>

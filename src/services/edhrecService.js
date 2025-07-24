@@ -1,4 +1,5 @@
 const httpHelper = require('../helpers/httpHelper');
+const { formatThemeName } = require('../utils/formatUtils');
 
 const BASE_URL = 'https://json.edhrec.com/pages';
 
@@ -18,7 +19,8 @@ function fetchDeckData(options, callback) {
   let urlPath = `${BASE_URL}/average-decks/${options.commander}`;
   
   if (options.theme) {
-    urlPath += `/${options.theme.toLowerCase()}`;
+    const formattedTheme = formatThemeName(options.theme);
+    urlPath += `/${formattedTheme}`;
   }
   
   if (options.budget) {

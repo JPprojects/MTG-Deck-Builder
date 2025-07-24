@@ -15,8 +15,6 @@ function DeckGenerator(props) {
   const generateDeck = (budget) => {
     setIsGenerating(true);
     setError(null);
-
-    console.log("generating")
     
     const options = {
       commander: commander.id,
@@ -26,10 +24,8 @@ function DeckGenerator(props) {
     
     fetchDeckData(options, (err, data) => {
       setIsGenerating(false);
-      console.log("Deck data", data)
       
       if (err) {
-        console.error('Error generating deck:', err);
         setError('Failed to generate deck. Please try again.');
         return;
       }
